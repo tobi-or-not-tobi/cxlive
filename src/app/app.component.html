@@ -1,1 +1,6 @@
+
 <cx-storefront></cx-storefront>
+
+<ng-template [cxOutletRef]="pdpOutlets.IMAGES" let-product>
+    <img *ngFor="let image of product.images.GALLERY" [src]="image.thumbnail.url"/>
+</ng-template>

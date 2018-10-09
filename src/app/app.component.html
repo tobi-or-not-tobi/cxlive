@@ -1,6 +1,10 @@
 
 <cx-storefront></cx-storefront>
 
+<ng-template cxOutletRef="SearchBoxComponent">
+  <app-custom-search></app-custom-search>
+</ng-template>
+
 <ng-template [cxOutletRef]="pdpOutlets.IMAGES" let-product>
     <img *ngFor="let image of product.images.GALLERY" [src]="image.thumbnail.url" (click)="detailImage = image" />
 
@@ -8,4 +12,5 @@
         <link rel="import" href="https://raw-dot-custom-elements.appspot.com/ryanburns23/img-pan-zoom/v2.0.0/img-pan-zoom/img-pan-zoom.html">
         <img-pan-zoom style="--img-pan-zoom-spinner-color:var(--y-primary)" [src]="detailImage?.zoom?.url"></img-pan-zoom>
     </ng-container>
+  
 </ng-template>

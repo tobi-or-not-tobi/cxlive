@@ -1,4 +1,4 @@
-<y-searchbox></y-searchbox>
-<p>
-  custom-search works!
-</p>
+<div class="custom-search">
+  <app-speech (query)="query = $event"></app-speech> &nbsp;
+  <y-searchbox class="d-none d-lg-block" [queryText]="query"></y-searchbox>
+</div>

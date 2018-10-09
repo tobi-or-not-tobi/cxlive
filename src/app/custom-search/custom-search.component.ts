@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './custom-search.component.html',
   styleUrls: ['./custom-search.component.scss']
 })
-export class CustomSearchComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class CustomSearchComponent {
+  query;
 }

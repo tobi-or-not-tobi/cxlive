@@ -8,4 +8,5 @@ import { ProductDetailOutlets } from '@spartacus/storefront';
 })
 export class AppComponent {
   pdpOutlets = ProductDetailOutlets;
+  detailImage;
 }

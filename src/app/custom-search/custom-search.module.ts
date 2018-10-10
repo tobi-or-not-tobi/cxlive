@@ -4,7 +4,7 @@ import { SearchBoxModule } from '@spartacus/storefront';
 import { SpeechComponent } from './speech/speech.component';
 
 @NgModule({
-  imports: [SearchBoxModule],
+  imports: [SearchBoxModule, SearchBoxModule],
   declarations: [CustomSearchComponent, SpeechComponent],
   exports: [CustomSearchComponent]
 })

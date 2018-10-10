@@ -55,7 +55,6 @@ export class SpeechRecognitionService {
       };
 
       this.speechRecognition.start();
-      console.log('Say something - We are listening !!!');
     });
   }
 

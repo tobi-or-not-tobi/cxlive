@@ -1,4 +1,4 @@
 <div class="custom-search">
-  <app-speech (query)="query = $event"></app-speech> &nbsp;
+  <app-speech (query)="search($event)"></app-speech> &nbsp;
   <y-searchbox class="d-none d-lg-block" [queryText]="query"></y-searchbox>
 </div>

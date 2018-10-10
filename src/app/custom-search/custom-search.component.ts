@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-custom-search',
@@ -7,4 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomSearchComponent {
   query;
+
+  constructor(private route: Router) {}
+
+  search(query) {
+    this.route.navigate(['/search', query]);
+  }
 }

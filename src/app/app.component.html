@@ -1,11 +1,9 @@
-
 <cx-storefront></cx-storefront>
 
-<ng-template cxOutletRef="SearchBoxComponent">
-  <app-custom-search></app-custom-search>
-</ng-template>
 
-<ng-template [cxOutletRef]="pdpOutlets.IMAGES" let-product>
+
+
+<!-- <ng-template [cxOutletRef]="pdpOutlets.IMAGES" let-product>
     <img *ngFor="let image of product.images.GALLERY" [src]="image.thumbnail.url" (click)="detailImage = image" />
 
     <ng-container *ngIf="detailImage">
@@ -13,4 +11,4 @@
         <img-pan-zoom style="--img-pan-zoom-spinner-color:var(--y-primary)" [src]="detailImage?.zoom?.url"></img-pan-zoom>
     </ng-container>
   
-</ng-template>
+</ng-template> -->

@@ -20,3 +20,14 @@ This demonstrates the ability to add runtime (CSS variables) theme configuration
 2. Add css variables to specific elements or components (i.e. y-add-to-cart)
 
 https://stackblitz.com/github/tobi-or-not-tobi/cxlive/tree/runtime-theming
+
+## Demo 3: Replace component
+This demonstrates the ability to replace a component, using so-called outlets. We intend to have outlets for pages, page templates, CMS slots, component (types) or any fragments that we've marked as an outlet. In this we override the search for mobile users, and replace it with a search-as-you-speak capability.
+
+1. Override the SearchBoxComponent using an ng-template
+2. Implement a custom search component
+3. Add the custom search component in the template
+
+**note:** the search box component will have an input feed the input directly into the search listing page. Since we don't have that today, we've add custom logic to navigate ourselfs to the search result page. 
+
+https://stackblitz.com/github/tobi-or-not-tobi/cxlive/tree/custom-search

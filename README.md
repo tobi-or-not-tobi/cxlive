@@ -31,3 +31,15 @@ This demonstrates the ability to replace a component, using so-called outlets. W
 **note:** the search box component will have an input feed the input directly into the search listing page. Since we don't have that today, we've add custom logic to navigate ourselfs to the search result page. 
 
 https://stackblitz.com/github/tobi-or-not-tobi/cxlive/tree/custom-search
+
+## Demo 4: Override and leverage ctx data
+This demonstrates an pdp image outlet that uses the data provided from the context. This means our customisation doesn't need to do the hard lifting to load data from OCC direcly (or use our ngrx store), it's available right away. 
+
+1. Introduce type-safe outlet references (`ProductDetailOutlets` or `ProductDetailsComponent.outlets`)
+2. Create an `ng-template` and register it to the `IMAGES` outlet
+3. Add a context attribute to the template (i.e. `let-model`
+4. Use the context attribute inside the template (i.e. `{{model | json}}`
+
+In order to see the demo, launch a PDP page (i.e. 1382080). The image section is been override.
+
+https://stackblitz.com/github/tobi-or-not-tobi/cxlive/tree/outlet-with-context

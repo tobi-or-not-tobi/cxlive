@@ -43,3 +43,17 @@ This demonstrates an pdp image outlet that uses the data provided from the conte
 In order to see the demo, launch a PDP page (i.e. 1382080). The image section is been override.
 
 https://stackblitz.com/github/tobi-or-not-tobi/cxlive/tree/outlet-with-context
+
+## Demo 5: Webcomponents
+This demonstration shows that we can add a conmponent written in non-angular frameworks (i.e. vuejs, polymer, react). This allows devs to pick the tech of choice. There are a number of [caveats to the use web components (aka custom elements)](https://caniuse.com/#search=custom%20elements%20v1) (despite the fact that firebix supports it since their latest release 🎉)
+
+We've chosen an existing web component and aren't interested in the tech it was created with. We're extending demo 4 with a panzoom capability for the selected image. 
+
+1. Use the same template we used in demo 4 (but use thumbnails here)
+2. Introduce an click event on the thumbnail to select the image
+3. Prepare the angular module to support custom elements (adding CUSTOM_ELEMENTS_SCHEMA to the module's schema's)
+4. Load an external web component (conditionally to demonstrate lazy loading of the web component)
+5. Use the web component and use the `src` input to hand over the large image URL
+6. (bonus, but cool) We're handing over our primary color (`--y-primary`) to the web components `--img-pan-zoom-spinner-color`, to ensure the same color is used in the loading spiner. This is the power of CSS variables who pierce through the shadow DOM!
+
+https://stackblitz.com/github/tobi-or-not-tobi/cxlive/tree/outlet-with-context

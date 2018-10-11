@@ -56,4 +56,4 @@ We've chosen an existing web component and aren't interested in the tech it was 
 5. Use the web component and use the `src` input to hand over the large image URL
 6. (bonus, but cool) We're handing over our primary color (`--y-primary`) to the web components `--img-pan-zoom-spinner-color`, to ensure the same color is used in the loading spiner. This is the power of CSS variables who pierce through the shadow DOM!
 
-https://stackblitz.com/github/tobi-or-not-tobi/cxlive/tree/outlet-with-context
+https://stackblitz.com/github/tobi-or-not-tobi/cxlive/tree/product-image-zoom

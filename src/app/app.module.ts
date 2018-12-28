@@ -12,7 +12,7 @@ import { CustomSearchModule } from './custom-search/custom-search.module';
     BrowserModule,
     StorefrontModule.withConfig({
       server: {
-        baseUrl: 'https://storefront.c39j2-walkersde1-d2-public.model-t.cc.commerce.ondemand.com'
+        baseUrl: 'https://storefront.c39j2-walkersde1-d4-public.model-t.cc.commerce.ondemand.com'
       }
     }),
     CustomSearchModule

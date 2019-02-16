@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { StorefrontModule } from '@spartacus/storefront';
+
 import { AppComponent } from './app.component';
 
-import { StorefrontModule } from '@spartacus/storefront';
 @NgModule({
   declarations: [AppComponent],
   imports: [

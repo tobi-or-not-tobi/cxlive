@@ -69,7 +69,7 @@ We've chosen an existing web component and aren't interested in the tech it was 
 3. Prepare the angular module to support custom elements (adding CUSTOM_ELEMENTS_SCHEMA to the module's schema's)
 4. Load an external web component (conditionally to demonstrate lazy loading of the web component)
 5. Use the web component and use the `src` input to hand over the large image URL
-6. (bonus, but cool) We're handing over our primary color (`--y-primary`) to the web components `--img-pan-zoom-spinner-color`, to ensure the same color is used in the loading spiner. This is the power of CSS variables who pierce through the shadow DOM!
+6. (bonus, but cool) We're handing over our primary color (`--cx-g-color-primary`) to the web components `--img-pan-zoom-spinner-color`, to ensure the same color is used in the loading spiner. This is the power of CSS variables who pierce through the shadow DOM!
 
 **code** https://stackblitz.com/github/tobi-or-not-tobi/cxlive/tree/product-image-zoom
 

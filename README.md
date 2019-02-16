@@ -60,7 +60,7 @@ In order to see the demo, launch a PDP page (i.e. 1382080). The image section is
 
 ## Demo 5: Webcomponents
 
-This demonstration shows that we can add a conmponent written in non-angular frameworks (i.e. vuejs, polymer, react). This allows devs to pick the tech of choice. There are a number of [caveats to the use web components (aka custom elements)](https://caniuse.com/#search=custom%20elements%20v1) (despite the fact that firebix supports it since their latest release 🎉)
+This demonstration shows that we can add a conmponent written in non-angular frameworks (i.e. vuejs, polymer, react). This allows devs to pick the tech of choice. There are a number of [caveats to the use web components (aka custom elements)](https://caniuse.com/#search=custom%20elements%20v1) (despite the fact that firefox supports it since their latest release 🎉)
 
 We've chosen an existing web component and aren't interested in the tech it was created with. We're extending demo 4 with a panzoom capability for the selected image.
 

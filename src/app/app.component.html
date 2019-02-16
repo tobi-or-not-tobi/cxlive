@@ -1,5 +1,7 @@
 <cx-storefront></cx-storefront>
 
 <ng-template [cxOutletRef]="pdpOutlets.IMAGES" let-product>
-    <img *ngFor="let image of product.images.GALLERY" [src]="image.product.url">
+  <div>
+    <img *ngFor="let image of product.images.GALLERY" [src]="image.product.url" />
+  </div>
 </ng-template>
